@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "ads",
   "info": {
-    "name": "Ad"
+    "name": "Ad",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -43,6 +44,16 @@
     "archivedAt": {
       "type": "datetime",
       "required": true
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
