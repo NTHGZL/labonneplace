@@ -520,8 +520,7 @@
           "title",
           "type",
           "description",
-          "price",
-          "archivedAt"
+          "price"
         ],
         "properties": {
           "id": {
@@ -536,8 +535,7 @@
               "username",
               "email",
               "firstName",
-              "lastName",
-              "connectedAt"
+              "lastName"
             ],
             "properties": {
               "id": {
@@ -570,9 +568,6 @@
               "role": {
                 "type": "string"
               },
-              "authorized_email": {
-                "type": "string"
-              },
               "firstName": {
                 "type": "string"
               },
@@ -590,6 +585,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "school": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -700,8 +698,7 @@
           "title",
           "type",
           "description",
-          "price",
-          "archivedAt"
+          "price"
         ],
         "properties": {
           "title": {

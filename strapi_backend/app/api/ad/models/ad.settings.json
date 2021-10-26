@@ -17,9 +17,9 @@
       "required": true
     },
     "author": {
+      "via": "ads",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "ads"
+      "model": "user"
     },
     "type": {
       "type": "enumeration",
@@ -43,7 +43,7 @@
     },
     "archivedAt": {
       "type": "datetime",
-      "required": true
+      "required": false
     },
     "pictures": {
       "collection": "file",

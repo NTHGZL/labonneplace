@@ -1190,8 +1190,7 @@
           "username",
           "email",
           "firstName",
-          "lastName",
-          "connectedAt"
+          "lastName"
         ],
         "properties": {
           "id": {
@@ -1254,26 +1253,6 @@
               }
             }
           },
-          "authorized_email": {
-            "required": [
-              "id",
-              "mail"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "mail": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "firstName": {
             "type": "string"
           },
@@ -1295,8 +1274,7 @@
                 "title",
                 "type",
                 "description",
-                "price",
-                "archivedAt"
+                "price"
               ],
               "properties": {
                 "id": {
@@ -1341,6 +1319,33 @@
                 }
               }
             }
+          },
+          "school": {
+            "required": [
+              "id",
+              "label",
+              "logo"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1349,8 +1354,7 @@
           "username",
           "email",
           "firstName",
-          "lastName",
-          "connectedAt"
+          "lastName"
         ],
         "properties": {
           "username": {
@@ -1386,9 +1390,6 @@
           "role": {
             "type": "string"
           },
-          "authorized_email": {
-            "type": "string"
-          },
           "firstName": {
             "type": "string"
           },
@@ -1407,6 +1408,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "school": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
