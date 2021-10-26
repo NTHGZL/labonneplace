@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/authorized-emails",
+      "handler": "authorized-email.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/authorized-emails/count",
+      "handler": "authorized-email.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/authorized-emails/:id",
+      "handler": "authorized-email.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/authorized-emails",
+      "handler": "authorized-email.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/authorized-emails/:id",
+      "handler": "authorized-email.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/authorized-emails/:id",
+      "handler": "authorized-email.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

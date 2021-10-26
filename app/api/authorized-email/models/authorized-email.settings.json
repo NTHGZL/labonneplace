@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authorized_emails",
+  "info": {
+    "name": "authorizedEmail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mail": {
+      "type": "email",
+      "required": true,
+      "unique": true,
+      "private": true
+    }
+  }
+}
