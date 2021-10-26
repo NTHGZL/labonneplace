@@ -1,0 +1,44 @@
+
+.flex{
+    display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.aligne-item-start{
+    align-items: flex-start;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+
+}
+
+.border-dashed{
+    border-style: dashed;
+    border-color: grey;
+    border-radius: 1rem;
+}
+
+.padding-0-5rem{
+    padding: 0.5rem;
+}
+
+.padding-1rem{
+    padding: 1rem;
+}

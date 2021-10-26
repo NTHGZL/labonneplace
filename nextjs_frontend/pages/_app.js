@@ -1,4 +1,6 @@
 import '../styles/globals.css'
+import '../styles/adForm.css'
+import '../styles/footer.css'
 import '../styles/navbar.css';
 
 function MyApp({ Component, pageProps }) {
