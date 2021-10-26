@@ -10,7 +10,7 @@ services:
       DATABASE_USERNAME: strapi
       DATABASE_PASSWORD: strapi
     volumes:
-      - ./app:/srv/app:rw
+      - ./strapi_backend/app:/srv/app:rw
     ports:
       - '1337:1337'
     depends_on:
@@ -23,4 +23,4 @@ services:
       MONGO_INITDB_ROOT_USERNAME: strapi
       MONGO_INITDB_ROOT_PASSWORD: strapi
     volumes:
-      - ./data:/data/db:rw
+      - ./strapi_backend/data:/data/db:rw
