@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ads",
+  "info": {
+    "name": "Ad"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "ads"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "REQUEST",
+        "PROPOSAL"
+      ],
+      "required": true,
+      "default": "PROPOSAL"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 8
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0,
+      "default": 0
+    },
+    "archivedAt": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

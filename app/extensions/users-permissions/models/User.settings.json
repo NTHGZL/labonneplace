@@ -77,6 +77,10 @@
     "connectedAt": {
       "type": "datetime",
       "required": true
+    },
+    "ads": {
+      "via": "author",
+      "collection": "ad"
     }
   }
 }
