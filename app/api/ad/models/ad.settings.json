@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "ads",
   "info": {
-    "name": "Ad"
+    "name": "Ad",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,9 +17,9 @@
       "required": true
     },
     "author": {
+      "via": "ads",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "ads"
+      "model": "user"
     },
     "type": {
       "type": "enumeration",
@@ -43,6 +44,19 @@
     "archivedAt": {
       "type": "datetime",
       "required": true
+    },
+    "category": {
+      "model": "category"
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

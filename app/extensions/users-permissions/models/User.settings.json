@@ -81,6 +81,9 @@
     "ads": {
       "via": "author",
       "collection": "ad"
+    },
+    "school": {
+      "model": "school"
     }
   }
 }
